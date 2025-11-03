@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Reviews - Couch Critics</title>
+    <meta charset="UTF-8">
+ <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    header img {
+      height: 80px;
+      margin:0px;
+      padding:0px;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size:clamp(18px, 3vw, 24px);
+      margin-left: 15px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size:clamp(16px, 2.5vw, 22px);
+      margin: 0 15px;
+    }
+    a {
+      transition:all 0.4s ease;
+    }
+    a:hover {
+      color: #ffcc00;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    @media (max-width: 500px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size:clamp(30px, 5vw, 40px);
+      }
+      nav {
+        flex-direction: column;
+        font-size:clamp(28px, 5vw, 38px);
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+    h1 {
+        text-align: center;
+    }
+    figure {
+        height: 200px;
+        width: auto;
+        border: 2px solid black;
+    }
+    figure img {
+        height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+    <a href="#">Apply for Critic Position</a>
+    <a href="about.html">About Couch Critics</a>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reviews.html">Movies</a>
+    <a href="shows.html">TV shows</a>
+    <a href="books.html">Books</a>
+  </nav>
+  <main>
+<h1>Reviews for trending movies</h1>
+<figure>
+    <img src="images/poster.png" alt="Poster for the Dying Light Movie">
+   <a href="synopsis.html"> <figcaption>The Dying light</figcaption></a>
+</figure>
+  </main>
+  <footer>
+    
+  </footer>
+</body>
