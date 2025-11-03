@@ -11,8 +11,15 @@ main {
     border: solid 2px black;
 }
 h1 {
-    background-color: #F5F5DC;
     height: 25px;
     padding-bottom: 25px;
     text-align: center;
+    display: flex;
+}
+header {
+    display: flex;
+    background-color: #F5F5DC;
+}
+header img {
+    height: 50px;
 }
