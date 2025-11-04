@@ -129,6 +129,9 @@ header {
         padding: 0;
         margin: 20px 0;
     }
+    figure img {
+        border-radius: 15%;
+    }
 
     .rankings-grid li {
     background: #1a1a1a;
