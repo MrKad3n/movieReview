@@ -5,27 +5,3 @@
 html {
     background-color: white;
 }
-main {
-    width: 0 auto;
-    height: 175px;
-    border: solid 2px black;
-}
-h1 {
-    height: 25px;
-    padding-bottom: 25px;
-    text-align: center;
-    display: flex;
-}
-header {
-    display: flex;
-    background-color: #F5F5DC;
-}
-header img {
-    height: 50px;
-}
-li {
-    text-indent: 1%;
-}
-h1 {
-    text-align: center;
-}
