@@ -95,7 +95,7 @@ header {
       background-color: #c7c7c7;
       flex-direction: column;
       width:200px;
-      background-image: url("images/zombie.jpg");
+      background-image: url("../images/zombie.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -142,4 +142,10 @@ header {
     .rankings-grid li:hover {
       transform: scale(1.05);
       background: #292929;
+    }
+    #silent {
+        background-image: url("../images/silentGod.png");
+    }
+    #zombie {
+        background-image: url("../images/poster.png");
     }
