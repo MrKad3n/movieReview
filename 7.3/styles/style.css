@@ -143,9 +143,15 @@ header {
       transform: scale(1.05);
       background: #292929;
     }
+
     #silent {
         background-image: url("../images/silentGod.png");
     }
     #zombie {
         background-image: url("../images/poster.png");
+    }
+    #img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
