@@ -64,6 +64,85 @@
         margin: 10px 0;
       }
     }
+    
+    #trending {
+      margin:10px auto;
+      padding:15px;
+      border-radius: 3px;
+      border:2px solid #353535;
+      background-color: #eb552f;
+      align-items: center;
+      width: clamp(600px, 800px, 1000px);
+    }
+    #trending div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x:auto;
+      overflow-y:hidden;
+      gap:20px;
+      scroll-behavior: smooth;
+    }
+    #trending h2 {
+      color:#ffffff;
+      font-size:clamp(30px,35px,40px);
+    }
+    section {
+      display: flex;
+      padding:0px;
+      border-radius: 4px;
+      background-color: #c7c7c7;
+      flex-direction: column;
+      width:200px;
+      background-image: url("images/zombie.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition:all 0.4s ease;
+    }
+    section aside{
+      padding:10px 10px 10px 20px;
+      border-left: 5px solid red;
+      margin-left: 5px;
+      color:white;
+      width:150px;
+      background-color: #1f1f1fa4;
+      z-index: 1;
+    }
+    section img {
+       width:150px;
+       visibility: hidden;
+    }
+    section:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .rankings-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 columns */
+      grid-template-rows: repeat(10, auto);  /* 10 rows */
+      gap: 10px; /* space between items */
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .rankings-grid li {
+      background: #4d4d4d;
+      color: #f5f5f5;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: 500;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .rankings-grid li:hover {
+      transform: scale(1.05);
+      background: #292929;
+    }
+
   </style>
 </head>
 <body>
@@ -79,7 +158,132 @@
     <a href="books.html">Books</a>
   </nav>
   <main>
-    
+    <div id="trending">
+      <h2>Trending</h2>
+      <div>
+        <a href="#">
+          <section>
+            <img src="images/zombie.jpg" alt="trending">
+            <aside>
+              <h3>Title</h3>
+              <h4>Score #</h4>
+            </aside>
+          </section>
+        </a>
+        
+
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      </div>
+    </div>
+
+    <div id="rankings">
+  <h2>🏆 Top Rankings for 2025</h2>
+  <div>
+    <ol class="rankings-grid">
+      <li>Silent God - 98% ⚡</li>
+      <li>Dying Light - 93% 🌅</li>
+      <li>Phantom Horizon - 92% 👻</li>
+      <li>Shattered Realms - 91% 🪞</li>
+      <li>Neon Frontier - 91% 🌃</li>
+      <li>Echoes of Eternity - 90% 🔊</li>
+      <li>Iron Rebellion - 90% 🤖</li>
+      <li>Starborne Legacy - 89% 🌠</li>
+      <li>Crimson Veil - 89% 🩸</li>
+      <li>Rogue Division - 88% 🎯</li>
+      <li>Nightfall Protocol - 88% 🌑</li>
+      <li>Project Paradox - 87% 🔁</li>
+      <li>Tempest Run - 87% 🌪️</li>
+      <li>Hollow Circuit - 86% 💻</li>
+      <li>Steel Reign - 86% 🛡️</li>
+      <li>Genesis Breaker - 85% 🌍</li>
+      <li>Darkwave - 85% 🌊</li>
+      <li>Drift Sector - 84% 🚗</li>
+      <li>Echo City - 84% 🏙️</li>
+      <li>Chrono Signal - 83% ⏰</li>
+      <li>Forsaken Ember - 83% 🔥</li>
+      <li>Skyforge Horizon - 82% 🏗️</li>
+      <li>Bloodline Zero - 82% 🧬</li>
+      <li>Neural Ghost - 81% 🧠</li>
+      <li>Deep Current - 81% 🌊</li>
+      <li>Omnic Rift - 80% 🌀</li>
+      <li>Redline Retribution - 80% 🏎️</li>
+      <li>Solar Exodus - 79% ☀️</li>
+      <li>Ironborn Protocol - 79% ⚙️</li>
+      <li>Terminal Bloom - 78% 💀</li>
+      <li>Project Aeon - 78% 🧩</li>
+      <li>Arc Pulse - 77% ⚡</li>
+      <li>Frozen Atlas - 77% 🧊</li>
+      <li>Pulse Runner - 76% 🏃‍♂️</li>
+      <li>Wasteland Verge - 76% 🏜️</li>
+      <li>Afterlight - 75% 🌠</li>
+      <li>Oblivion Circuit - 75% 🕳️</li>
+      <li>Dust Meridian - 74% 🌫️</li>
+      <li>Quantum Shade - 74% ⚛️</li>
+      <li>Broken Neon - 73% 💡</li>
+      <li>Zero Horizon - 73% 0️⃣</li>
+      <li>Cradlefall - 72% 🪶</li>
+      <li>System Breaker - 72% 🖥️</li>
+      <li>Inferno Protocol - 71% 🔥</li>
+      <li>Ruinwalker - 71% 🏚️</li>
+      <li>Arc Warden - 70% 🛡️</li>
+      <li>Glass Vengeance - 70% 🪞</li>
+      <li>Neon Ashes - 69% 💥</li>
+      <li>Chrono Veil - 69% ⏳</li>
+      <li>Fatebound - 68% 🔮</li>
+    </ol>
+  </div>
+</div>
+
+
+
   </main>
   <footer>
     
