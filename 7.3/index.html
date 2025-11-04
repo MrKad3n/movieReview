@@ -64,6 +64,59 @@
         margin: 10px 0;
       }
     }
+    
+    #trending {
+      margin:10px auto;
+      padding:15px;
+      border-radius: 3px;
+      border:2px solid #353535;
+      background-color: #eb552f;
+      align-items: center;
+      width: clamp(600px, 800px, 1000px);
+    }
+    #trending div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x:auto;
+      overflow-y:hidden;
+      gap:20px;
+      scroll-behavior: smooth;
+    }
+    #trending h2 {
+      color:#ffffff;
+      font-size:clamp(30px,35px,40px);
+    }
+    section {
+      display: flex;
+      padding:0px;
+      border-radius: 4px;
+      background-color: #c7c7c7;
+      flex-direction: column;
+      width:200px;
+      background-image: url("images/zombie.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition:all 0.4s ease;
+    }
+    section aside{
+      padding:10px 10px 10px 20px;
+      border-left: 5px solid red;
+      margin-left: 5px;
+      color:white;
+      width:150px;
+      background-color: #1f1f1fa4;
+      z-index: 1;
+    }
+    section img {
+       width:150px;
+       visibility: hidden;
+    }
+    section:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -79,7 +132,71 @@
     <a href="books.html">Books</a>
   </nav>
   <main>
-    
+    <div id="trending">
+      <h2>Trending</h2>
+      <div>
+        <a href="#">
+          <section>
+            <img src="images/zombie.jpg" alt="trending">
+            <aside>
+              <h3>Title</h3>
+              <h4>Score #</h4>
+            </aside>
+          </section>
+        </a>
+        
+
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      <section>
+        <img src="images/zombie.jpg" alt="trending">
+        <aside>
+          <h3>Title</h3>
+          <h4>Score #</h4>
+        </aside>
+      </section>
+      </div>
+    </div>
   </main>
   <footer>
     
