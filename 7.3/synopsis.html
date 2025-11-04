@@ -3,14 +3,97 @@
   <link rel="stylesheet" href="styles/style.css">
   <title>Synopsis and Details - Couch Critics</title>
   <meta charset="UTF-8">
-  
+    <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    header img {
+      height: 80px;
+      margin:0px;
+      padding:0px;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size:clamp(18px, 3vw, 24px);
+      margin-left: 15px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size:clamp(16px, 2.5vw, 22px);
+      margin: 0 15px;
+    }
+    a {
+      transition:all 0.4s ease;
+    }
+    a:hover {
+      color: #ffcc00;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    body {
+      width: 75%;
+      height: auto;
+      border: 2px solid black;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size:clamp(30px, 5vw, 40px);
+      }
+      nav {
+        flex-direction: column;
+        font-size:clamp(28px, 5vw, 38px);
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+    #img {
+display: block;
+margin: 0 auto;
+margin-bottom: 20px;
+    }
+
+    </style>
 </head>
 <body>
-  <header>
+ <header>
     <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-    <h1>Summary for the Dying Light</h1>
+    <a href="#">Apply for Critic Position</a>
+    <a href="about.html">About Couch Critics</a>
   </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reviews.html">Movies</a>
+    <a href="shows.html">TV shows</a>
+    <a href="books.html">Books</a>
+  </nav>
+    <h1>Summary and Details about the Dying Light </h1>
+      <img src="images/poster.png" alt="poster for the dying light" height="500px" id="img">
   <main>
+  
     <p> Zombieland is a horror-comedy road movie that follows four unlikely survivors as they navigate a post-apocalyptic America overrun by fast-moving zombies. The film balances gore and action with humor and heart, ultimately focusing on the importance of human connection.
 Plot Summary:
 The story is narrated by Columbus, a timid, neurotic college student who has survived the apocalypse by strictly following his own set of survival rules (e.g., "Cardio," "Double Tap," "Seatbelts"). He is on a solo journey from Texas to Ohio, hoping to find out if his parents are still alive.
@@ -20,7 +103,15 @@ Their cross-country journey includes a memorable, humorous stop at Bill Murray's
 The film's climax takes place at the Pacific Playland amusement park. The sisters turn on the lights and rides, which inadvertently attracts hordes of zombies from the surrounding area. The group is forced to work together, using their unique skills and the amusement park's attractions, to fight off a massive attack and rescue Little Rock and Wichita from a drop tower ride.
 In the end, having conquered their fears and learned to trust one another, the four survivors realize that having people to rely on is more important than surviving alone. They leave the park together, a new, unconventional family with hope for the future.</p>
   </main>
+   <h3>We rate this film</h3>
+    <img src="images/download.png" alt="Our Five star rating for the Dying Light" height="100px">
+    <p>We love this film because of the action suspense and the comedic relif the this moive has. It is well deserving of the 5 stars we gave it, and we hope that other will enjoy the movie just as much as we did.</p>
   <footer>
-    
+   <h2>The Actors</h2>
+   <p>The Actors are really well known but they don't ruin the movie like most others, this movie has,</p>
+   <ul>
+    <li>Grant Sterling, who has had a fast upbringing sense his debut in Thunder Bringer.</li>
+    <li>Cora Vancem, we firmly believe that she was a great choice for this movie even though she's had a lackluster preformence in past positions.</li>
+   </ul>
   </footer>
 </body>

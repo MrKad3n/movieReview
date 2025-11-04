@@ -23,3 +23,9 @@ header {
 header img {
     height: 50px;
 }
+li {
+    text-indent: 1%;
+}
+h1 {
+    text-align: center;
+}
