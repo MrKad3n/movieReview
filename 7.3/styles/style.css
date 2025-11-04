@@ -143,3 +143,8 @@ header {
       transform: scale(1.05);
       background: #292929;
     }
+    #img {
+display: block;
+margin: 0 auto;
+margin-bottom: 20px;
+    }
