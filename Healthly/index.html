@@ -67,11 +67,17 @@
             #news div {
                 display: flex;
                 flex-direction: row;
-                wrap: nowrap;
+                flex-wrap: nowrap;
                 overflow-x:scroll;
+
+                scroll-behavior: smooth;
+
+                /* ADD THESE to hide the scrollbar */
+                scrollbar-width: none; /* For Firefox */
+                -ms-overflow-style: none; /* For Internet Explorer 10+ */
             }
             #news div article {
-                width: clamp(200px,300px,400px);
+                width:clamp(200px,300px,400px);
                 font-size:clamp(14px,16px,18px);
                 background-color: #f3f3f3;
                 box-shadow: 2px 2px 3px #ccc;
@@ -106,31 +112,81 @@
             <a href="#">Contact Us</a>
 		</nav>
 		<main>
-			<aisde id="news">
-                <h2>Latest Health News</h2>
-                <div>
+			<aside id="news">
+            <h2>Latest Health News</h2>
+
+            <div> 
                 <article>
-                    <h3>10 Tips for a Healthier Lifestyle</h3>
-                    <p>Discover simple yet effective ways to improve your overall health and well-being with these 10 tips.</p>
+
+                    <img src="images/yoga.jpg" alt="yoga">
+                    <h3>Top Ten Things That make you more healthly</h3>
+                    <p></p>
+
                 </article>
                 <article>
-                    <h3>The Benefits of Regular Exercise</h3>
-                    <p>Learn about the numerous physical and mental health benefits that come with maintaining a regular exercise routine.</p>
+
+                    <img src="images/training.jpg" alt="training">
+                    <h3>Top Ten Things That make you more healthly</h3>
+                    <p></p>
+
                 </article>
                 <article>
-                    <h3>Healthy Eating on a Budget</h3>
-                    <p>Find out how to eat nutritious meals without breaking the bank with these budget-friendly tips.</p>
+
+                    <img>
+                    <h3>Top Ten Things That make you more healthly</h3>
+                    <p></p>
+
                 </article>
-                </div>
-            </aisde>
+            </div>
+        </aside>
             <section>
                 <h2>Health is A Requirement</h2>
+                
+                <p>Welcome to Health Central, your go-to resource for a balanced and vibrant life. We believe that health isn't just a goal, but a daily practice that touches every part of your life. It's the foundation upon which we build our dreams, families, and futures.</p>
+                
+                <p>True wellness is a blend of physical strength, mental clarity, and nutritional balance. It's not about extreme diets or impossible workout routines; it's about making small, sustainable choices every single day.</p>
+                
+                <h3>Our Core Pillars:</h3>
+                <ul>
+                    <li><strong>Nourish:</strong> Discover the power of food as fuel. Learn about balanced diets, mindful eating, and how nutrition impacts your energy and mood.</li>
+                    <li><strong>Move:</strong> Find joy in movement. Whether you're a beginner or an advanced athlete, we have workout plans to help you build strength and stamina.</li>
+                    <li><strong>Thrive:</strong> Your mental well-being is just as important as your physical health. Explore resources for stress management, mindfulness, and building mental resilience.</li>
+                </ul>
+                
+                <p>Explore our articles, guides, and plans to start your journey today. Because health isn't just an option—it's a requirement for a happy life.</p>
+                
             </section>
-
 		</main>
 		<footer>
 			
 		</footer>
-		
+		<script>
+    // Wait for the page content to load
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // Get the elements we need
+        const container = document.querySelector('#news div');
+        const prevBtn = document.getElementById('prevNews');
+        const nextBtn = document.getElementById('nextNews');
+        const firstArticle = container.querySelector('article');
+
+        if (container && prevBtn && nextBtn && firstArticle) {
+            
+            // Calculate how far to scroll
+            // We get the article's full width + 20px (for its 10px margin on each side)
+            const scrollAmount = firstArticle.offsetWidth + 20;
+
+            // When "Next" is clicked, scroll right
+            nextBtn.addEventListener('click', () => {
+                container.scrollLeft += scrollAmount;
+            });
+
+            // When "Previous" is clicked, scroll left
+            prevBtn.addEventListener('click', () => {
+                container.scrollLeft -= scrollAmount;
+            });
+        }
+    });
+    </script>
 	</body>
 </html>
