@@ -7,6 +7,20 @@ html {
                 box-sizing: border-box;
                 font-family: Arial, Helvetica, sans-serif;
             }
+            @keyframes fadeInUp {
+            0% {
+                transform: translateY(10%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+            }
+
+            .fadeInUp-animation {
+            animation: 1.5s fadeInUp;
+            }
             header {
                 background-color: #ABE7B2;
                 padding: 20px;
