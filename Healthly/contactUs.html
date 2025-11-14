@@ -2,7 +2,20 @@
 <html lang="en">
 <head>
   <style>
- 
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .form-row aside {
+      width: 120px;
+      margin-right: 15px;
+      text-align: center;
+    }
+    .form-row input {
+      flex-grow: 1;
+      padding: 5px;
+    }
   </style>
   <title></title>
   <meta charset="UTF-8">
@@ -11,9 +24,35 @@
   <h1>Contact Us</h1>
   <form>
     <fieldset>
-      <h2>Give usyour contact information?</h2>>
+      <h2>Give us your contact information?</h2>
+      <aside class="form-row">
+
+     
+      <p>Name: <input type="text" name="Name" id="Name" required></p>
+      <p>Phone number: <input type="number" name="phoneNumber" id="phoneNumber" required></p>
+      <p>Email: <input type="email" name="email" id="email" required></p>
+ </aside>
+
+      <h2>How would you like us to contact you?</h2>
+      <aside class="form-row">
+      <p><input type="radio" name="contactMethod" id="contactPhone" value="phone" checked> Phone</p>
+      <p><input type="radio" name="contactMethod" id="contactEmail" value="email"> Email</p>
+      </aside>
+
+      <h2>If you would like to visit us in person please put your desired date here</h2>
+      <input type="date" name="date" id="date"> <br>
+      <input type="submit" value="Submit" id="submit"> <input type="reset" value="reset" id="reset">
     </fieldset>
   </form>
- 
+ <script>
+  document.getElementById('submit').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert("Your form has been submitted.");
+  });
+    document.getElementById('reset').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert("Your form has been reset.");
+  });
+ </script>
 </body>
 </html>
