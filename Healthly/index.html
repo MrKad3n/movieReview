@@ -23,6 +23,9 @@
                 font-size: 35px;
                 color: white;
             }
+            h1,h2,h3,h4,h5,h6 {
+                font-family: 'Times New Roman', Times, serif!important;
+            }
             nav {
                 display: flex;
                 justify-content: center;
@@ -34,7 +37,7 @@
                 text-decoration: none;
                 color: #333;
                 font-weight: bold;
-                font-size:20px;
+                font-size:18px;
                 transition: all 0.3s ease;
             }
             nav a:hover {
@@ -58,17 +61,21 @@
             }
             main {
                 width:80vw;
+                margin:0px auto;
             }
             #news {
-                float: right;
-                width:40vw;
+                width:60vw;
                 padding:10px;
+                align-items: center;
+                margin:15px auto;
+                
             }
             #news div {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
-                overflow-x:scroll;
+                overflow-x:auto;
+                overflow-y: hidden;
 
                 scroll-behavior: smooth;
 
@@ -77,20 +84,101 @@
                 -ms-overflow-style: none; /* For Internet Explorer 10+ */
             }
             #news div article {
-                width:clamp(200px,300px,400px);
+                width:350px;
+                flex: 0 0 auto; /* Prevent shrinking and growing */
                 font-size:clamp(14px,16px,18px);
                 background-color: #f3f3f3;
                 box-shadow: 2px 2px 3px #ccc;
                 margin:10px;
             }
+            #news div article img {
+                width:100%;
+                height:auto;
+            }
+            article h3 {
+                padding:10px;
+                font-family: 'Times New Roman', Times, serif;
+                text-decoration: underline;
+            }
+            article p {
+                padding:0px 10px 10px 10px;
+                text-align: justify;
+                color:#333;
+                font-size:75%;
+                font-style: italic;
+            }
             @media screen and (max-width:450px){
                 main {
                     width:100vw;
                 }
+                #news {
+                    width:100vw;
+                    float:none;
+                }   
             }
             section h2 {
                 font-size:clamp(35px,40px,45px);
-                font-family: 'Times New Roman', Times, serif
+                font-family: 'Times New Roman', Times, serif;
+                margin-bottom: 20px;
+            }
+            
+            .health-pillars {
+                padding: 20px 0; /* Add some vertical spacing */
+                width: 100%;
+            }
+
+            .health-pillars h2 {
+                text-align: center; /* Center the title */
+                margin-bottom: 20px;
+            }
+
+            .pillar-container {
+                display: flex;
+                flex-wrap: wrap; /* Allows cards to wrap on small screens */
+                justify-content: center;
+                gap: 20px; /* Adds space between the cards */
+            }
+
+            .pillar-card {
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                padding: 20px;
+                
+                /* Each card will try to be 300px, but can shrink or grow */
+                flex-basis: 300px;
+                flex-grow: 1;
+            }
+
+            .pillar-card h3 {
+                color: #ABE7B2; /* Use your theme's header color */
+                margin-bottom: 10px;
+            }
+            section {
+                overflow: hidden;
+                
+                background-color: #ffffff;
+                padding: 25px;
+                margin-bottom: 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            }
+
+            /* Style for paragraphs inside a section */
+            section p {
+                line-height: 1.6; /* Makes text easier to read */
+                margin-bottom: 15px;
+            }
+
+            /* Style for lists inside a section */
+            section ul {
+                margin-left: 20px;
+                margin-bottom: 15px;
+            }
+
+            section li {
+                line-height: 1.6;
+                margin-bottom: 8px;
             }
         </style>
 	</head>
@@ -109,7 +197,7 @@
             </div>
             <a href="#">Nutrition</a>
             <a href="#">Mental Health</a>
-            <a href="#">Contact Us</a>
+            <a href="contactUs.html">Contact Us</a>
 		</nav>
 		<main>
 			<aside id="news">
@@ -120,21 +208,21 @@
 
                     <img src="images/yoga.jpg" alt="yoga">
                     <h3>Top Ten Things That make you more healthly</h3>
-                    <p></p>
+                    <p>By Kaden Cruts - 2025</p>
 
                 </article>
                 <article>
 
                     <img src="images/training.jpg" alt="training">
-                    <h3>Top Ten Things That make you more healthly</h3>
-                    <p></p>
+                    <h3>New Training Method Sparks Interest for its incredible effective results but with the downside of Excuriating Pain.</h3>
+                    <p>By Kaden Cruts - 2025</p>
 
                 </article>
                 <article>
 
-                    <img>
-                    <h3>Top Ten Things That make you more healthly</h3>
-                    <p></p>
+                    <img src="images/pills.jpg" alt="pills">
+                    <h3>New Research Suggest Steriods Has <em>Devistating</em> Side Effects</h3>
+                    <p>By Kaden Cruts - 2025</p>
 
                 </article>
             </div>
@@ -156,6 +244,32 @@
                 <p>Explore our articles, guides, and plans to start your journey today. Because health isn't just an option—it's a requirement for a happy life.</p>
                 
             </section>
+            <section class="health-pillars">
+            <h2>Explore the Pillars of Wellness</h2>
+            
+            <div class="pillar-container">
+                <article class="pillar-card">
+                    <h3>Fitness & Movement</h3>
+                    <p>Discover the joy of movement. Whether you're a beginner or an expert, regular physical activity is key to building strength, boosting energy, and improving your mood. Find plans and tips that fit your lifestyle.</p>
+                </article>
+                
+                <article class="pillar-card">
+                    <h3>Nutrition & Diet</h3>
+                    <p>Fuel your body, fuel your life. Learn how to make smart, nourishing choices without sacrificing flavor. We explore balanced diets, mindful eating, and how food impacts your well-being from the inside out.</p>
+                </article>
+                
+                <article class="pillar-card">
+                    <h3>Mental Health</h3>
+                    <p>Your mental well-being is just as crucial as your physical health. Find resources for managing stress, practicing mindfulness, and building emotional resilience. It's time to prioritize your peace of mind.</p>
+                </article>
+                
+                <article class="pillar-card">
+                    <h3>Supplements & Medicine</h3>
+                    <p>Navigate the world of health with clarity. While a good diet is primary, we explore the facts behind common supplements and health topics. Always consult your healthcare provider for personalized medical advice.</p>
+                </article>
+            </div>
+        </section>
+
 		</main>
 		<footer>
 			
