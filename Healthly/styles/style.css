@@ -171,3 +171,27 @@ html {
                 line-height: 1.6;
                 margin-bottom: 8px;
             }
+             .img {
+                display: block;
+                 margin: 0 auto;
+                    }
+             body {
+                 text-align: center;
+                     }
+                 table {
+                 border-collapse: collapse;
+                     }
+              .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .form-row aside {
+      width: 120px;
+      margin-right: 15px;
+      text-align: center;
+    }
+    .form-row input {
+      flex-grow: 1;
+      padding: 5px;
+    }
