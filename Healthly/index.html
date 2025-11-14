@@ -6,16 +6,127 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
+        <style>
+            html {
+                transition-behavior: smooth;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #ABE7B2;
+                padding: 20px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #CBF3BB;
+                padding: 10px;
+            }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-size:20px;
+                transition: all 0.3s ease;
+            }
+            nav a:hover {
+                color: #93BFC7;
+            }
+            .dropdown {
+                position: relative;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 130px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            main {
+                width:80vw;
+            }
+            #news {
+                float: right;
+                width:40vw;
+                padding:10px;
+            }
+            #news div {
+                display: flex;
+                flex-direction: row;
+                wrap: nowrap;
+                overflow-x:scroll;
+            }
+            #news div article {
+                width: clamp(200px,300px,400px);
+                font-size:clamp(14px,16px,18px);
+                background-color: #f3f3f3;
+                box-shadow: 2px 2px 3px #ccc;
+                margin:10px;
+            }
+            @media screen and (max-width:450px){
+                main {
+                    width:100vw;
+                }
+            }
+            section h2 {
+                font-size:clamp(35px,40px,45px);
+                font-family: 'Times New Roman', Times, serif
+            }
+        </style>
 	</head>
 	<body>
 		<header>
-			
+            <h1>Health Central</h1>
 		</header>
-		<nav>
-			
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown"><a href="#">Workout Plans</a>
+            <div class="dropdown-content">
+                <a href="#">Beginner</a>
+                <a href="#">Intermediate</a>
+                <a href="#">Advanced</a>
+            </div>
+            </div>
+            <a href="#">Nutrition</a>
+            <a href="#">Mental Health</a>
+            <a href="#">Contact Us</a>
 		</nav>
 		<main>
-			
+			<aisde id="news">
+                <h2>Latest Health News</h2>
+                <div>
+                <article>
+                    <h3>10 Tips for a Healthier Lifestyle</h3>
+                    <p>Discover simple yet effective ways to improve your overall health and well-being with these 10 tips.</p>
+                </article>
+                <article>
+                    <h3>The Benefits of Regular Exercise</h3>
+                    <p>Learn about the numerous physical and mental health benefits that come with maintaining a regular exercise routine.</p>
+                </article>
+                <article>
+                    <h3>Healthy Eating on a Budget</h3>
+                    <p>Find out how to eat nutritious meals without breaking the bank with these budget-friendly tips.</p>
+                </article>
+                </div>
+            </aisde>
+            <section>
+                <h2>Health is A Requirement</h2>
+            </section>
+
 		</main>
 		<footer>
 			
