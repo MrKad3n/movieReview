@@ -7,86 +7,10 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
         <style>
-            html {
-                transition-behavior: smooth;
-            }
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            header {
-                background-color: #ABE7B2;
-                padding: 20px;
-                text-align: center;
-                font-size: 35px;
-                color: white;
-            }
-            nav {
-                display: flex;
-                justify-content: center;
-                background-color: #CBF3BB;
-                padding: 10px;
-            }
-            nav a {
-                margin: 0 15px;
-                text-decoration: none;
-                color: #333;
-                font-weight: bold;
-                font-size:20px;
-                transition: all 0.3s ease;
-            }
-            nav a:hover {
-                color: #93BFC7;
-            }
-            .dropdown {
-                position: relative;
-            }
-
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 130px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                padding: 12px 16px;
-            }
-
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            main {
-                width:80vw;
-            }
-            #news {
-                float: right;
-                width:40vw;
-                padding:10px;
-            }
-            #news div {
-                display: flex;
-                flex-direction: row;
-                wrap: nowrap;
-                overflow-x:scroll;
-            }
-            #news div article {
-                width: clamp(200px,300px,400px);
-                font-size:clamp(14px,16px,18px);
-                background-color: #f3f3f3;
-                box-shadow: 2px 2px 3px #ccc;
-                margin:10px;
-            }
-            @media screen and (max-width:450px){
-                main {
-                    width:100vw;
-                }
-            }
-            section h2 {
-                font-size:clamp(35px,40px,45px);
-                font-family: 'Times New Roman', Times, serif
-            }
+            
         </style>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
 	</head>
 	<body>
 		<header>
@@ -103,29 +27,78 @@
             </div>
             <a href="#">Nutrition</a>
             <a href="#">Mental Health</a>
-            <a href="#">Contact Us</a>
+            <a href="contactUs.html">Contact Us</a>
 		</nav>
 		<main>
-			<aisde id="news">
-                <h2>Latest Health News</h2>
-                <div>
+			<aside id="news">
+            <h2>Latest Health News</h2>
+
+            <div> 
                 <article>
-                    <h3>10 Tips for a Healthier Lifestyle</h3>
-                    <p>Discover simple yet effective ways to improve your overall health and well-being with these 10 tips.</p>
+
+                    <img src="images/yoga.jpg" alt="yoga">
+                    <h3>Top Ten Things That make you more healthly</h3>
+                    <p>By Kaden Cruts - 2025</p>
+
                 </article>
                 <article>
-                    <h3>The Benefits of Regular Exercise</h3>
-                    <p>Learn about the numerous physical and mental health benefits that come with maintaining a regular exercise routine.</p>
+
+                    <img src="images/training.jpg" alt="training">
+                    <h3>New Training Method Sparks Interest for its incredible effective results but with the downside of Excuriating Pain.</h3>
+                    <p>By Kaden Cruts - 2025</p>
+
                 </article>
                 <article>
-                    <h3>Healthy Eating on a Budget</h3>
-                    <p>Find out how to eat nutritious meals without breaking the bank with these budget-friendly tips.</p>
+
+                    <img src="images/pills.jpg" alt="pills">
+                    <h3>New Research Suggest Steriods Has <em>Devistating</em> Side Effects</h3>
+                    <p>By Kaden Cruts - 2025</p>
+
                 </article>
-                </div>
-            </aisde>
+            </div>
+        </aside>
             <section>
                 <h2>Health is A Requirement</h2>
+                
+                <p>Welcome to Health Central, your go-to resource for a balanced and vibrant life. We believe that health isn't just a goal, but a daily practice that touches every part of your life. It's the foundation upon which we build our dreams, families, and futures.</p>
+                
+                <p>True wellness is a blend of physical strength, mental clarity, and nutritional balance. It's not about extreme diets or impossible workout routines; it's about making small, sustainable choices every single day.</p>
+                
+                <h3>Our Core Pillars:</h3>
+                <ul>
+                    <li><strong>Nourish:</strong> Discover the power of food as fuel. Learn about balanced diets, mindful eating, and how nutrition impacts your energy and mood.</li>
+                    <li><strong>Move:</strong> Find joy in movement. Whether you're a beginner or an advanced athlete, we have workout plans to help you build strength and stamina.</li>
+                    <li><strong>Thrive:</strong> Your mental well-being is just as important as your physical health. Explore resources for stress management, mindfulness, and building mental resilience.</li>
+                </ul>
+                
+                <p>Explore our articles, guides, and plans to start your journey today. Because health isn't just an option—it's a requirement for a happy life.</p>
+                
             </section>
+            <section class="health-pillars">
+            <h2>Explore the Pillars of Wellness</h2>
+            
+            <div class="pillar-container">
+                <article class="pillar-card">
+                    <h3>Fitness & Movement</h3>
+                    <p>Discover the joy of movement. Whether you're a beginner or an expert, regular physical activity is key to building strength, boosting energy, and improving your mood. Find plans and tips that fit your lifestyle.</p>
+                </article>
+                
+                <article class="pillar-card">
+                    <h3>Nutrition & Diet</h3>
+                    <p>Fuel your body, fuel your life. Learn how to make smart, nourishing choices without sacrificing flavor. We explore balanced diets, mindful eating, and how food impacts your well-being from the inside out.</p>
+                </article>
+                
+                <article class="pillar-card">
+                    <h3>Mental Health</h3>
+                    <p>Your mental well-being is just as crucial as your physical health. Find resources for managing stress, practicing mindfulness, and building emotional resilience. It's time to prioritize your peace of mind.</p>
+                </article>
+                
+                <article class="pillar-card">
+                    <h3>Supplements & Medicine</h3>
+                    <p>Navigate the world of health with clarity. While a good diet is primary, we explore the facts behind common supplements and health topics. Always consult your healthcare provider for personalized medical advice.</p>
+                </article>
+            </div>
+        </section>
 
 		</main>
 		<footer>
