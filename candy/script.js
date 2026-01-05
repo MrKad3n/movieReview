@@ -13,5 +13,23 @@ const CANDIES = [
         name: "Malt Balls",
         price: 1.25,
         image: "media/maltBalls.jpg"
+    },
+    {
+        name: "Kitkat",
+        price: 1.75,
+        image: "media/kitkat.jpg",
+        flavors: ["Normal", "Mini", "Donut"]
+    },
+    {
+        name: "M&ms",
+        price: 1.50,
+        image: "media/m&ms.jpg",
+        flavors: ["Normal", "Mini", "Peanut"]
+    },
+    {
+        name: "Hershey's",
+        price: 1.25,
+        image: "media/hersheys.jpg",
+        flavors: ["Normal", "Kisses", "Cookies and Cream"]
     }
 ];
