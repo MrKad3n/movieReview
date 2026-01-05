@@ -1,26 +1,40 @@
-const CANDIES = [
+const candyData = [
     {
+        id: 1,
         name: "Snow Caps",
         price: 1.50,
         image: "media/snowCaps.jpg",
+        category: "chocolate",
+        description: "Delicious chocolate with a snowy white coating",
+        flavors: ["Original"]
     },
     {
+        id: 2,
         name: "Gummy Fish",
         price: 1.00,
-        image: "media/gummyFish.jpg"
+        image: "media/gummyFish.jpg",
+        category: "gummy",
+        description: "Tasty fish-shaped gummy candies",
+        flavors: ["Assorted"]
     },
     {
+        id: 3,
         name: "Malt Balls",
         price: 1.25,
-        image: "media/maltBalls.jpg"
+        image: "media/maltBalls.jpg",
+        category: "chocolate",
+        description: "Crunchy malted milk balls covered in chocolate",
+        flavors: ["Original"]
     },
     {
+        id: 4,
         name: "Kitkat",
         price: 1.75,
         image: "media/kitkat.jpg",
+        category: "chocolate",
+        description: "Classic crispy wafer chocolate bar",
         flavors: ["Normal", "Mini", "Donut"]
-    },
-
+    }
 ];
 
 let cart = [];
@@ -140,10 +154,10 @@ function updateCartDisplay() {
         });
         
         cartHTML += '</ul>';
-        kartHTML += `<p class="cart-total"><strong>Total: $${total.toFixed(2)}</strong></p>`;
+        cartHTML += `<p class="cart-total"><strong>Total: $${total.toFixed(2)}</strong></p>`;
     }
     
-    kartSection.innerHTML = kartHTML;
+    kartSection.innerHTML = cartHTML;
 }
 
 function removeFromCart(index) {
