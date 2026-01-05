@@ -5,17 +5,60 @@
          
         </style>
         <script>
-            const one = "chocolate";
-             const two = "gummy";
+            let one;
+             let two;
+             let three;
+             const four = 'kitkat';
+             const five = "hershey's"
+
+              function checkCandy(candy) {
 
             let candy = prompt("What type of candy are you looking for? Type one for our chocolate selection or two for gummies.");
 
-            function checkCandy(candy) {
+           
 
             if (candy === one) {
                 alert("We have a wide variety of chocolates! We have Snow Caps and Malt Balls");
-            } else if (candy === "two") {
-                alert("Sorry, that option was gummies");
+            } else if (candy === two) {
+                alert("We have Gummy Fish!");
+            } 
+            
+            else if (candy === three) {
+                alert("We have M&Ms! We have Normal, Mini, and Peanut!");
+                let mnms = prompt("Which one would you like? One for normal, two for mini, and three for peanut.");
+                if (mnms === 1) {
+                    alert("You selected Normal M&Ms.");
+                } else if (mnms === 2) {
+                    alert("You selected Mini M&Ms.");
+                } else if (mnms === 3) {
+                    alert("You selected Peanut M&Ms.");
+                }
+            } 
+            
+            else if (candy === four) {
+                let kitkat;
+                alert("We have KitKats! We have Normal, Mini, and Chocolate Frosted Donut!");
+                prompt("Which one would you like? One for normal, two for mini, and three for chocolate frosted donut.");
+                if (kitkat === 1) {
+                    alert("You selected Normal KitKat.");
+                } else if (kitkat === 2) {
+                    alert("You selected Mini KitKat.");
+                } else if (kitkat === 3) {
+                    alert("You selected Chocolate Frosted Donut KitKat.");
+                }
+            } 
+            
+            else if (candy === five) {
+                let hersheys
+                alert("We have Hershey's! We have Milk Chocolate, Kisses, and Cookies n' Creme!");
+                prompt("Which one would you like? One for Milk Chocolate, two for Kisses, and three for Cookies n' Creme.");
+                if (hersheys === 1) {
+                    alert("You selected Milk Chocolate Hershey's.");
+                } else if (hersheys === 2) {
+                    alert("You selected Hershey's Kisses.");
+                } else if (hersheys === 3) {
+                    alert("You selected Hershey's Cookies n' Creme.");
+                }
             }
         }   
 
@@ -61,7 +104,7 @@
             
             </main>
             <footer>
-            <input type="button" value="Check Candy Options" onclick="checkCandy(candy)">
+            <input type="button" value="Help" onclick="checkCandy(candy)">
         </footer>
 
          </body>
