@@ -2,7 +2,7 @@ const CANDIES = [
     {
         name: "Snow Caps",
         price: 1.50,
-        image: "media/snowCaps.jpg"
+        image: "media/snowCaps.jpg",
     },
     {
         name: "Gummy Fish",
