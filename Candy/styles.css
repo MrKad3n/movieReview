@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #ffe5d9;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+}
+nav {
+    overflow: hidden;
+    background-color: #ffcad4;
+    text-align: center;
+    font-size: clamp(20px,25px,30px);
+}
+nav a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+    margin: 0 15px;
+    text-align: center;
+    padding: 5px;
+    margin:3px 10px;
+}
+.dropdown {
+    overflow: hidden;
+    text-align: center;
+}
+.dropdown .dropdown-content {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+    margin: 0 15px;
+    text-align: center;
+    padding: 5px;
+}
