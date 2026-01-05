@@ -13,6 +13,7 @@ nav {
     background-color: #ffcad4;
     text-align: center;
     font-size: clamp(20px,25px,30px);
+    transition:all 0.3s ease;
 }
 nav a {
     text-decoration: none;
@@ -27,11 +28,24 @@ nav a {
     overflow: hidden;
     text-align: center;
 }
-.dropdown .dropdown-content {
+.dropdown .dropbtn {
     text-decoration: none;
     color: #ff6f61;
     font-weight: bold;
     margin: 0 15px;
     text-align: center;
     padding: 5px;
+}
+nav a:hover, .dropdown:hover .dropbtn {
+    color: #ff5647;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #ff6f61;
+    z-index:1;
+}
+.dropdwown:hover .dropdown-content {
+    display: block;
 }
