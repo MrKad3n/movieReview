@@ -40,9 +40,17 @@ const candyData = [
 let cart = [];
 
 function populateCandies() {
-    const candiesDiv = document.querySelector('.candies');
-    candiesDiv.innerHTML = '';
+    // Clear all sections first
+    const chocolateSection = document.querySelector('#chocolate');
+    const gummySection = document.querySelector('#gummy');
+    const hardcandySection = document.querySelector('#hardcandy');
     
+    // Keep the headers, clear only the candy items
+    chocolateSection.innerHTML = '<h2>Chocolate Candies</h2>';
+    gummySection.innerHTML = '<h2>Gummy Candies</h2>';
+    hardcandySection.innerHTML = '<h2>Hard Candies</h2>';
+    
+    // Populate candies into their respective sections
     candyData.forEach(candy => {
         const candyElement = document.createElement('div');
         candyElement.className = `candy-item ${candy.category}`;
@@ -53,7 +61,15 @@ function populateCandies() {
             <p class="description">${candy.description}</p>
             <button class="add-btn" onclick="openPopup(${candy.id})">View & Add to Cart</button>
         `;
-        candiesDiv.appendChild(candyElement);
+        
+        // Append to the appropriate section based on category
+        if (candy.category === 'chocolate') {
+            chocolateSection.appendChild(candyElement);
+        } else if (candy.category === 'gummy') {
+            gummySection.appendChild(candyElement);
+        } else if (candy.category === 'hardcandy') {
+            hardcandySection.appendChild(candyElement);
+        }
     });
 }
 
