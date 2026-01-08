@@ -101,6 +101,7 @@ nav a {
     padding:15px;
     background-color:#d8e2dc;
     border-radius:10px;
+    
     border:3px solid #ffe5d9;
 }
 .options aside {
@@ -127,7 +128,7 @@ nav a {
 
 /* Candy Items Display */
 .candies {
-    float: right;
+    
     width: 65%;
     padding: 10px;
 }
