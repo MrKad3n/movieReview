@@ -42,20 +42,50 @@ header nav a:hover:last-child {
 }
 
 /*Main Section Styles*/
-main section {
+main > section {
     padding:12px;
     background-color: rgb(207, 177, 3);
-    border: 2px solid rgb(196, 117, 0);
+    border: 4px solid rgb(196, 117, 0);
     border-radius: 3px;
     font-size:clamp(14px, 2vw, 18px);
     line-height:1.6;
     text-align:justify;
-    width: clamp(300px, 80%, 800px);
-    margin: auto;
+    width: clamp(600px, 80%, 1000px);
+    margin: 12px auto;
+    display:flex;
+    flex-direction: row;
+}
+
+main > section img {
+    max-width:300px;
+    height:auto;
+    margin-bottom:8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+main > section div {
+    display:flex;
+    flex-direction: column;
+}
+main > section div button {
+    width:150px;
+    padding:8px;
+    margin-top:12px;
+    font-size:16px;
+    font-weight:bold;
+    background-color: darkred;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    transition:0.3s ease all;
+}
+main > section div button:hover {
+    background-color: red;
+    transform: scale(1.05);
 }
 /*Banner Styles*/
 #banner {
-    width:100vw;
+    width:98vw;
     height:auto;
     margin-bottom:8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -79,4 +109,28 @@ footer section {
     flex-direction:column;
     align-items:center;
     justify-content: space-around;
+}
+
+/*Form styles*/
+form {
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+    width:50vw;
+    margin:12px auto;
+}
+form label {
+    font-size:18px;
+    font-weight:bold;
+}
+form input {
+    padding:8px;
+    font-size:16px;
+    border:2px solid gray;
+    border-radius:4px;
+}
+form div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
