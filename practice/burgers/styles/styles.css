@@ -1,16 +1,21 @@
+/*Universal Styles*/
 * {
     box-sizing: border-box;
     margin:0px;
     padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*header styles*/
 header {
     background-color:gold;
     padding:10px;
     text-align:center;
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     justify-content: space-around;
+    border-bottom:5px red solid;
 }
+/*Navigation Styles*/
 header nav {
     display: flex;
     align-items: center;
@@ -22,22 +27,56 @@ header nav a {
     text-decoration:none;
     color:black;
     font-weight:bold;
-    font-size:clamp(14px, 2vw, 18px);
+    font-size:clamp(24px, 5vw, 28px);
     transition:0.5s ease all;
 }
 header nav a:hover {
     color:rgb(255, 38, 0);
-    transform: rotate(10deg);
     transform: scale(1.1);
 }
+header nav a:hover:first-child {
+    transform: rotate(-10deg) scale(1.1)!important;
+}
+header nav a:hover:last-child {
+    transform: rotate(10deg) scale(1.1)!important;
+}
+
+/*Main Section Styles*/
 main section {
     padding:12px;
     background-color: rgb(207, 177, 3);
     border: 2px solid rgb(196, 117, 0);
     border-radius: 3px;
-    font-size:15px;
+    font-size:clamp(14px, 2vw, 18px);
     line-height:1.6;
     text-align:justify;
     width: clamp(300px, 80%, 800px);
     margin: auto;
+}
+/*Banner Styles*/
+#banner {
+    width:100vw;
+    height:auto;
+    margin-bottom:8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Footer Styles*/
+footer {
+    background-color: gold;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-top:5px red solid;
+}
+footer section {
+    width:40vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-around;
 }
